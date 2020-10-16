@@ -11,4 +11,4 @@ It's a simple Markdown editor that would allow user to either _Mark Up_ or _Mark
 
 # Program Screenshot:
 
-<p align="center">
+<p align="center"><img src="https://github.com/DeepNinja07x/Markdown-Editor/blob/main/Markdown-Editor/Screenshot%20.png"></p>
