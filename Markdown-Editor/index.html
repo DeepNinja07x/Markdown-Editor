@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My little editor: a simple HTML previewer"/>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet">
+    <title>My little editor</title>
+    
+</head>
+
+
+
+<body>
+<main>
+<div class="container">
+<h1 align="center">Markdown Editor</h1>
+ <hr>
+
+
+
+<div class="toolbar-wrapper" id="tool-bar">
+    <ul class="toolbar">
+        <li><button id="bold" class="tool"><b>&nbsp;B&nbsp;</b></button></li>
+        <li><button id="ital" class="tool"><em>&nbsp;i&nbsp;</em></button></li>
+        <li><button id="under" class="tool"><u>&nbsp;U&nbsp;</u></button></li>
+        <li><button id="hili" class="tool"><mark>&nbsp;h&nbsp;</mark></button></li>
+        <li><button id="strike" class="tool"><s>&nbsp;s&nbsp;</s></button></li>
+
+        <!-- <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li>
+        <li><button id="" class="tool">&nbsp;?&nbsp;</button></li> -->
+
+        
+    </ul>
+</div>
+
+<div class="form-item">
+<div class="editor-wrapper">
+   
+    <label class="text-options">
+        <span class="text-label">
+            <i id="" class="fa fa-pencil" aria-hidden="true"></i>
+            Editor
+        </span>
+        
+
+        <div>
+        <i class="fa fa-download" aria-hidden="true"></i>
+        <i class="fa fa-info-circle" aria-hidden="true"></i>
+    </div>
+    </label> 
+  
+    
+    <textarea type="text"
+            name="submitted-post"
+            id="submittedPost"
+            placeholder="Write something here..."
+            rows="20"
+            cols="40"
+            maxlength="1500"
+            autofocus="true"
+            required="required"
+            >This is a simple note.
+
+<b>Bold me.</b>
+
+<i>Italicize me.</i>
+
+<u>Underline me.</u>
+
+<mark>Highlight me.</mark>
+
+<s>Strike me.</s>
+
+<s><mark><u><em><strong>Mark me up.</strong></em></u></mark></s></textarea>
+            
+</div>
+    
+<div class="preview-wrapper">
+    <!-- <span class="description">Preview</span> -->
+    <label>
+        <i class="fa fa-eye" aria-hidden="true"></i>
+
+        Preview</label>
+    <div id="preview">
+    <p id="preview-item" class="preview-inner"></p>
+    </div>
+</div>
+
+<form id="userSubmission" class="submit-form">
+    
+    <fieldset>
+        <!-- <legend>Contribute</legend> -->
+
+    <label class="profile-item">First name: </label>
+        <input name="submitted-fname" 
+                id="submittedFname"
+                placeholder="first"
+                autocomplete="First Name" 
+                type="text"
+                size="18">
+   
+
+    <label class="profile-item">Last name:</label>
+        <input name="submitted-lname" 
+                id="submittedLname"
+                placeholder="last"
+                autocomplete="Last Name" 
+                type="text"
+                size="18">
+    
+
+    <label class="profile-item">Email address:</label>
+        <input name="submitted-email"
+                id="submittedEmail" 
+                type="email" 
+                autocomplete="off"
+                placeholder="email@gmail.com">
+                
+    
+
+    <label class="profile-item">Username:</label>
+        <input name="submitted-username" 
+                id="submittedUsername" 
+                placeholder="4 to 8 characters"
+                autocomplete="firstInitalLastName" 
+                type="text" 
+                required="required"
+                minlength="4" 
+                maxlength="8"
+                size="10">
+    
+    
+    <label class="profile-item">Date published:</label>
+        <input name="pub-date"
+                id="pubDate"
+                type="date"
+                autocomplete="on">
+    
+
+
+    <button class="submit-bt" type="submit">Submit</button>
+
+    
+        <!-- <label class="notepad">Post:</label> -->
+            
+        
+</fieldset> 
+</form>
+</div>
+
+
+
+</div>
+</main>
+<script src="./script.js"></script>
+</body>
